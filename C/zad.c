@@ -135,3 +135,109 @@
 //  }
 //  }
 //  } 
+
+// int main() {
+//     int n,gr;
+//   printf ("unesite granicu"); scanf ("%d",&gr);
+//   n=1;
+//   do {
+//       printf ("%d\n",n);
+//       n=n*2;
+//   }
+//   while (n<=gr);
+//     return 0;
+// }
+
+// main()
+// {
+//  int n;
+//  do
+//  {
+//  printf(" n= ");
+//  scanf("%d", &n);
+//  }
+//  while(n*n<=0 || n*n>100);
+//  printf("\n Kvadrat broja %d [%d] pripada prvoj stotini.\n", n, n*n);
+//   return 0; 
+// }
+
+
+
+// main()
+// {
+//  int i;
+//  i=2;
+//  do
+//  {
+//  printf("%d\n", i);
+//  i+=2;
+//  }
+//  while(i<=10);
+
+//  return 0;
+// }
+
+
+
+// main()
+// {
+//  int i;
+//  i=1;
+//  do
+//  {
+//  printf("%d\n", i);
+//  i++;
+//  }
+//  while(i<=10);
+ 
+//  return 0;
+// }
+
+
+
+
+// main()
+// {
+//  int i;
+//  i=1;
+//  do
+//  {
+//  printf("Pozdrav svima!\n");
+//  i++;
+//  }
+//  while(i<=5);
+//  return 0;
+// }
+
+
+// int main() {
+//     float znak=-1.0,clan=1.0,suma=1.0,eps;
+//     int i=1;
+//     printf ("eps = "); scanf ("%f" ,&eps);
+//     do
+//     {
+//         clan=(float)znak/(2*i+1);
+//         suma=suma+clan;
+//         znak=-znak;
+//         i++;
+//     }
+//     while (fabs(clan)>eps);
+//     printf ("\n Pi=%f",4*suma);
+
+
+
+
+
+// int main() {
+//    float a,i=0,s=0;
+//    printf ("unesite broj a = "); scanf ("%f" ,&a);
+//    do 
+//    {
+//        i++;
+//        s=s+1/i;
+//    }
+//    while (s<a);
+//    printf ("s = %f" , s);
+//     return 0;
+// }
+
