@@ -241,3 +241,153 @@
 //     return 0;
 // }
 
+// int main() {
+//     // Write C code here
+//     int s=0,i,brojac;
+    
+//     for (i=100;i<=999;i++) {
+        
+//         if (i%64==0) {
+//             s=s+i;
+//             brojac++;
+//         }
+        
+//     }
+//     printf ("suma = %d\nbrojeva = %d",s,brojac);
+// return 0;
+// }
+
+
+
+// main()
+// {
+//  int i=100,s=0,br=0;
+//  do
+//  {
+// if(i%64==0)
+//  {
+//  s+=i;
+//  br++;
+//  }
+//  i++;
+//  }
+//  while (i<=999);
+//  printf("\n Suma= %d", s);
+//  printf("\n Brojeva= %d", br);
+//  return 0;
+
+// }
+
+// int main() {
+//     int i,br=0,m,n=0,brojac=0;
+   
+    
+//     do {
+//         printf ("m = "); scanf ("%d" , &m);
+//     }
+//     while (m<=0 || m>=10);
+    
+//     do {
+//         printf ("br = "); scanf ("%d" , &br);
+//         if (br>9 && br<=99){
+//             n=br/10;
+//             if(n==m) brojac++;
+//         }
+//         else if (br>99 && br<=999 ) {
+//             n=br/100;
+//             if (n==m) brojac++;
+//         } else if (br==m) ++;
+//         }
+       
+      
+  
+
+  
+//     while (br!=0);
+  
+//   printf ("%d ima pocetnu cifru %d" , brojac,m);
+// return 0;
+// }
+
+
+
+
+
+// Online C compiler to run C program online
+// #include <stdio.h>
+
+// int main() {
+//     int i;
+//   while(1) {
+//       printf ("\ni = "); scanf ("%d" , &i);
+//       if (i<0) break;
+//       printf ("i*i = %d" , i*i);
+//   }
+// return 0;
+// }
+
+
+
+
+// int main() {
+//     int i,x;
+//     printf ("unesite cele brojeve stop nek bude 0 :\n "); 
+//   for (i=0;i<=100;i++) {
+//       scanf ("%d" , &x);
+//       if (x==STOP) break;
+//       printf ("\n%d" , x);
+//   }
+// return 0;
+// }
+
+// int main() 
+    
+// {
+// int i;
+// for (i=1;i<500;i++) {
+//     if (i%3==0 && i%4==0 && i%5==0 && i%7==0) {
+//         printf ("%d" , i);
+//         break;
+//     }
+// }
+//  return 0;
+// }
+
+
+
+
+
+//  int n, i;
+//  float s;
+//  while(1)
+//         {
+//          printf(" n= ");  scanf("%d", &n);
+                         
+//     if(n <= 0) break;
+//     s=0;
+//     for(i=1; i<=n; i++)
+//     s+=1./(i*i);
+//     printf (" S= %.6f\n\n", s);
+//  }
+
+//  return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+// #define STOP 0
+// int main() 
+    
+// {
+// int i;
+// for (i=1;i<=100;i++) {
+//     if (i%2!=0 && i%3!=0 && i%4!=0 && i%5!=0 && i%6!=0 && i%7!=0 && i%8!=0 && i%9!=0 ||i==2 || i==3 || i==5 || i==7){
+  
+//     printf ("\n%d" ,i );
+// }
+ 
+// }
+// return 0;
+// }
