@@ -447,3 +447,125 @@
 // }
 // printf(" %d",br);
 // return 0;
+
+
+
+//123 mora biti deljiv sa 1!,2!,3! tj 1 ,2,6
+
+// int a,b,c,broj,counter,fakt,d;
+// printf ("unesite broj"); scanf ("%d" , &broj);
+// x=broj;
+// d=broj;
+// while (i>0){
+//     broj/=10;
+//     i++;
+//     counter++;
+// }
+// for (i=1;i<counter;i++) {
+//     d=x%10;
+//     x/10;
+
+//     for (i=1;i<=d;i++) {
+//         fakt*=i;
+//     }
+// }
+
+
+
+
+// // Online C compiler to run C program online
+// #include <stdio.h>
+
+// int main() {
+//     int a,b,c,broj,counter,fakt,d,i,x;
+// printf ("unesite broj"); scanf ("%d" , &broj);
+// x=broj;
+// d=broj;
+// while (broj>0){
+//     broj/=10;
+    
+//     counter++;
+    
+
+// for (i=1;i<counter;i++) {
+//     d=x%10;
+//     x/10;
+
+//     for (i=1;i<=d;i++) {
+//         fakt*=i;
+//         if (x%fakt==0) {
+//             printf ("more\n");
+//         }else {
+//             printf ("ne more\n");
+//         }
+//     }
+// }
+// i++;
+// }
+//     return 0;
+// }
+
+
+
+
+// // Online C compiler to run C program online
+// #include <stdio.h>
+
+// int main() {
+//     // Write C code here
+//     printf("Hello world");
+//         int n,broj,i,counter,cifra,fakt=1,c;
+//        printf ("unesite broj n= "); scanf ("%d" , &n);
+//         broj=n;
+//         broj=c;
+//        while (broj>0) {
+//            fakt=1;
+//            cifra=broj%10;
+           
+             
+//            for (i=1;i<=cifra;i++) {
+//                fakt*=i;      
+//                if (c%fakt==0) {
+//                    printf ("moze");
+//                }else ("ne moze"); 
+               
+//            }
+//            broj/=10;
+           
+//        } 
+        
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//  int n,broj,cifre,fakt=1,i,s=0,bikica=0,brojac=0;
+//  printf("unesi broj:");
+//  scanf("%d",&broj);
+//  n=broj;
+//  while(broj>0){
+//      cifre=broj%10;
+//      brojac++;
+//        broj/=10; 
+//         printf("\ncifre su:%d",cifre);
+//         for(i=1;i<=cifre;i++){
+//             fakt*=i;
+//         }
+//         printf("fakt je: %d",fakt);
+//          s+=fakt;
+//          if(n%fakt==0){
+//      bikica++;
+//  }
+//         fakt=1;
+        
+ 
+//  } printf("\nsuma je %d",s);
+//  if (bikica==brojac) {
+//      printf("\nmoze");
+//  }else printf ("\nne moze");
+//     return 0;
+// }
