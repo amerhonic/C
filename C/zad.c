@@ -569,3 +569,47 @@
 //  }else printf ("\nne moze");
 //     return 0;
 // }
+
+
+
+
+
+
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int n,a,b,c,d,broj,suma,suma1;
+    printf("unesi sumu");
+    scanf("%d",&suma);
+    while(1){
+        printf("unesi broj");
+        scanf("%d",&broj);
+        
+        a=broj%10;
+        b=(broj/10)%10;
+        c=(broj/100)%10;
+        d=(broj/1000)%10;
+    
+        if () {
+            suma1=suma1+broj;
+                
+        }
+        if(suma1>suma) {
+            break;
+        }
+        
+
+
+    }
+    printf ("suma = %d" ,suma1);
+    return 0;
+}
