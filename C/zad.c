@@ -614,3 +614,107 @@ int main()
     return 0;
 }
 
+// int i=1;
+// while(i<=10){
+    
+//     printf("%d",i);
+//     i+=2;
+// }
+// return 0;
+
+
+// int i=10;
+// while(i>=1){
+//     printf("%d",i);
+//     i--;
+
+// }
+// return 0;
+
+
+//5.3
+
+// int i=1,n;
+// int suma=0;
+// printf("unesi n:");
+// scanf("%d",&n);
+// while(i<=n){
+//     suma=suma+i;
+//     i++;
+// }
+// printf("%d",suma);
+// return 0;
+
+//5.4
+// int i=1,n;
+// int suma=0;
+// printf("unesi n:");
+// scanf("%d",&n);
+// while(i<=n){
+//     suma=suma+i;
+//     i+=3;
+// }
+// printf("%d",suma);
+// return 0;
+
+
+//5.5
+// int i=1,n;
+// float suma=0;
+// printf("unesi n:");
+// scanf("%d",&n);
+// while(i<=n){
+//     suma=suma+1.0/pow(2*i+1,2);
+//     i++;
+// }
+// printf("%.3f",suma);
+// return 0;
+
+
+//5.6
+// int i,n,m,suma=0;
+// printf("unesi n:");
+// scanf("%d",&n);
+// printf("unesi m:");
+// scanf("%d",&m);
+// i=n;
+// while(i<=m){
+//     if(i%2==0){
+//         suma+=pow(i,2);
+//     }
+//     else suma+=pow(i,3);
+//     i++;
+// }
+// printf("suma je %d:",suma);
+// return 0;
+
+//5.7 a)
+// int i=3,n,fpp=1,fp=1,fn;
+// printf("unesi n:");
+// scanf("%d",&n);
+// printf("f1=1\n");
+// printf("f2=1\n");
+// while(i<=n){
+//     fn=fp+fpp;
+//     fpp=fp;
+//     fp=fn;
+//     printf("f%d=%d\n",i,fn);
+//     i++;
+// }
+
+// return 0;
+
+//5.7 b)
+// int i=3,n,fpp=1,fp=1,fn,suma =2;
+// printf("unesi n:");
+// scanf("%d",&n);
+// while(i<=n){
+//     fn=fp+fpp;
+//     fpp=fp;
+//     fp=fn;
+//     suma =suma+fn;
+//     i++;
+// }
+// printf("suma je %d",suma);
+
+// return 0;
