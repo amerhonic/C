@@ -718,3 +718,140 @@ int main()
 // printf("suma je %d",suma);
 
 // return 0;
+
+
+
+// int brojac=0,suma=0;
+// const float stop=0; 
+// int realanbr=-1;
+// float as;
+// while(realanbr !=stop){
+//     printf("unesi realan broj:");
+//     scanf("%d",&realanbr);
+//     if(realanbr>=2 &&realanbr<=6){
+//         suma+=realanbr;
+//         brojac++;
+//     }
+// }
+// as=suma/(brojac);
+// printf("resenje je%f",as);
+// return 0;
+
+//
+// int i=1,n,m=0,f=1,gore=1,levo=1,desno=1;
+// float rezultat;
+// while(m<1||n<1||n>m){
+//     printf("unesi m:");
+// scanf("%d",&m);
+// printf("unesi n:");
+// scanf("%d",&n);
+// }
+// for(i=1;i<=m;i++){
+//     gore*=i;
+// }
+// for(i=1;i<=n;i++){
+//     levo*=i;
+
+// }
+// for(i=1;i<=(m-n);i++){
+//     desno*=i;
+
+// }
+// rezultat=gore*1.0/(levo*desno);
+// printf("koeficijent je %.2f",rezultat);
+// return 0;
+
+
+//
+// int i,m,n,pomocna;
+//     float koren,suma=0;
+//     printf("unesi m i n");
+//     while(m<1||n<1){
+//         scanf("%d %d",&m,&n);
+//     }
+//     if(m>n){
+//         pomocna=n;
+//         n=m;
+//         m=pomocna;
+        
+//     }
+//     if(m%2==0)m++;
+//     for(i=m;i<=n;i=i+2){
+//         koren=sqrt(i);
+//         suma+=koren;
+//     }
+//     printf("suma korena je %.3f",suma);
+//     return 0;
+
+//
+// int i,n,znak=1;
+// float suma=0;
+//     printf("unesi n:");
+//     scanf("%d",&n);
+//     i=1;
+//     while(i<=n){
+//         suma=suma+znak*1.0/i;
+//         znak=-znak;
+//         i++;
+//     }
+//     printf("suma je %.3f",suma);
+
+
+//
+// int a,b;
+// printf("unesi a:");
+// scanf("%d",&a);
+// printf("unesi b:");
+// scanf("%d",&b);
+// while(a!=b){
+//     if(a>b){
+//         a=a+b;
+//     }
+//     else{
+//         b=b-a;
+//     }
+// }
+// printf("nzd je %d",a);
+// return 0;
+
+//
+// int n, pom,suma=0,zadnjaCifra;
+// printf("unesi n:");
+// scanf("%d",&n);
+// pom=n;
+// while(pom>0){
+//     zadnjaCifra=pom%10;
+//     suma=suma+zadnjaCifra;
+//     pom=pom/10;
+// }
+// if(n%suma==0){
+//     printf("broj je nivenov");
+
+// }
+// else printf("nije");
+// return 0;
+
+
+// int n,obrnut=0;
+// printf("unesi n:");
+// scanf("%d",&n);
+// while(n>0){
+//     obrnut=obrnut*10+n%10;
+//     n=n/10;
+// }
+// printf("obrnut je %d",obrnut);
+// return 0;
+
+
+// 28 =2*2*7
+// int n,k,m;
+// printf("unesi n:");
+// scanf("%d",&n);
+// m=n/2;
+// for(k=2;k<=(n/2);k++){
+//     while(n%k==0){
+//         printf("%d\n",k);
+//         n=n/k;
+//     }
+// }
+// return 0
