@@ -855,3 +855,184 @@ int main()
 //     }
 // }
 // return 0
+
+
+
+
+// if(c>t &&t>d&&d>p){
+//     printf("cifre rastu");
+// }
+// else if(c<t &&t<d&&d<p) printf("cifre opadaju");
+// else printf("cifre nemaju lep raspored");
+// return 0;
+
+
+//ako broj ima nule na kraju izbrisi ih
+// int n;
+// printf("unesi  broj");
+// scanf("%d",&n);
+// while(n%10==0){
+//     n=n/10;
+// }
+// printf("%d",n);
+// return 0;
+
+//umesi broj i sve njegove parne cifre uvecaj za 1
+//     int x,y=0,vr=1,cifra;
+// printf("unesi broj:");
+// scanf("%d",&x);
+// while(x>0){
+//     cifra=x%10;
+//     if(cifra%2==0){
+//         cifra++;
+        
+//     }
+//     y=y+cifra*vr;
+//     x=x/10;
+//     vr=vr*10;
+    
+    
+// }
+// printf("%d",y);
+// return 0;
+
+
+// brisanje svakde druge cifre sa desna
+// int x,y=0,vr=1,cifra,rbr=0;
+// printf("unesi broj:");
+// scanf("%d",&x);
+// while(x>0){
+//     cifra=x%10;
+//     if(rbr%2==0){
+//         y=y+vr*cifra;
+//         vr=vr*10;
+//     }
+    
+//     rbr++;
+//     x=x/10;
+    
+    
+    
+// }
+// printf("%d",y);
+// return 0;
+
+// }
+
+//ako je zbir dve susedne cifre ta cifra ona se brise
+// int n, novo_n;
+// int stepen;
+//  int cifra_levo , cifra_sredina , cifra_desno;
+//  /* Ucitavanje broja. */
+// printf("Unesite broj: ");
+//  scanf("%d", &n);
+//  if (n <= 0) {
+// printf("Neispravan unos.\n");
+//  return -1;
+// }
+
+// /* Stepen broja 10 sa kojim se mnoze cifre izdvojenog broja. */
+//  stepen = 1;
+//  /* Nova vrednost broja. */
+// novo_n = 0;
+
+// /* Provera da li u zapisu broja postoje barem tri cifre. */
+//  while (n > 99) {
+// /* Izdvaja se srednja cifra , cifra desno od nje i cifra levo od
+//  nje: npr. za trojku 583 8 je srednja cifra , 3 je cifra
+// desno , a 5 cifra levo. */
+//  cifra_desno = n % 10;
+// cifra_sredina = (n / 10) % 10;
+//  cifra_levo = (n / 100) % 10;
+//  /* U novi broj se smesta desna cifra. */
+// novo_n += cifra_desno * stepen;
+
+// // /* Azurira se vrednost stepena. */
+// //  stepen = stepen * 10;
+// //  /* Provera da li je srednja cifra jednaka zbiru leve i desne
+// // cifre. */
+// //  if (cifra_levo + cifra_desno == cifra_sredina) {
+// //      /* Treba izbaciti srednju cifru , pa broj n se azurira tako
+// // sto se podeli sa 100. */
+// //  n = n / 100;} else {
+
+// // /* Inace , zadrzava se srednja cifra i odbacuje se samo
+// // 49 poslednja. */
+// // n = n / 10;
+// //  }
+// // }
+
+// // /* Na novi broj se dodaje preostali dvocifreni ili jednocifreni
+// // 55 broj. */
+// // novo_n = n * stepen + novo_n;
+
+// // /* Ispisivanje rezultata. */
+// //  printf("%d\n", novo_n);
+
+// // return 0;
+
+// //ispisuje se broj sa najvecom vodecom cifrom
+// int n;
+//  int x, x_kopija;
+// int broj;
+//  int vodeca_cifra , max_vodeca_cifra;
+// int i;
+// 
+// /* Citamo vrednost sa ulaza */
+//  printf("Unesite broj n: ");
+// scanf("%d", &n);
+// 
+// /* Postavljamo maksimalnu vodecu cifru na 0 - cifre broja su vece
+//  ili jednake od 0 pa je ova vrednost neutralna */
+// max_vodeca_cifra = 0;
+
+// /* Ucitavamo broj po broj */
+//  printf("Unesite n brojeva: ");
+// for (i = 0; i < n; i++) {
+//  scanf("%d", &x);
+//  /* Odredjujemo vodecu cifru broja */
+// x_kopija = abs(x);
+//  while (x_kopija > 10) {
+// x_kopija = x_kopija / 10;
+//  }
+// vodeca_cifra = x_kopija;
+
+// /* Ako je izdvojena cifra veca od maksimalne vodece cifre */
+//  if (vodeca_cifra > max_vodeca_cifra) {
+// /* Cuvamo je */
+//  max_vodeca_cifra = vodeca_cifra;
+// /* I zbog ispisa , cuvamo i broj u kojem se ona pojavljuje */
+//  /* Zbog ovoga smo morali i da racunamo vodecu cifru nad
+// kopijom broja x kako ne bismo promenili njegovu vrednost */
+//  broj = x;
+// }
+//  }
+//  /* Ispisujemo rezultat */
+// printf("%d\n", broj);
+
+//dat je trocifren broj ispisi ga da bude najveci moguci
+//npr 348 ->843 
+// int n,x,y,z,p;
+// printf("unesi n:");
+// scanf("%d",&n);
+// z=n%10;
+// y=(n/10)%10;
+// x=(n/100)%10;
+// printf("%d",a);
+// if(y>x){
+//     p=x;
+//     x=y;
+//     y=p;
+// }
+// if(z>x){
+//     p=x;
+//     x=z;
+//     z=p;
+// }
+// if(z>y){
+//     p=y;
+//     y=z;
+//     z=p;
+// }
+// printf("%d%d%d",x,y,z);
+// return 0;
