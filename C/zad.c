@@ -1036,3 +1036,76 @@ int main()
 // }
 // printf("%d%d%d",x,y,z);
 // return 0;
+
+
+
+// #include <stdio.h>
+// int zbir(int a,int b) {
+//     int rezultat;
+//     rezultat=a+b;
+//     return rezultat;
+// }
+
+// int main() {
+//     // Write C code here
+    
+// int c;
+// c=zbir(5,3);
+// printf ("%d" , c);
+//     return 0;
+// }
+
+
+
+// Online C compiler to run C program online
+// #include <stdio.h>
+// #define PI 3.14
+// double povrisna (double r) {
+    
+//     return (4*r*r*PI);
+// }
+// double zapremina (double r) {
+    
+//     return (4./3*r*r*r*PI);
+// }
+// void ispis (double p,double v) {
+//     double c,z;
+//     printf ("povrsina je  %lf " ,p);
+//     printf ("zapremina je %lf " ,v);
+// }
+
+// int main() {
+//     // Write C code here
+//    double r,p,v;
+//    p=povrisna(r);
+//    v=zapremina(r);
+    
+//     printf ("unesite r"); scanf ("%f" , &r);
+    
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// #include <math.h>
+// int Suma(int a)
+// {
+//  int s=0;
+//  while (a!=0)
+//  { 
+// s+=a%10;
+//  a/=10;
+//  }
+//  return s;
+// }
+// main()
+// {
+//  int i, d, g;
+//  printf(" Donja granica= ");
+//  scanf("%d", &d);
+//  printf(" Gornja granica= ");
+//  scanf("%d", &g);
+//  for(i=d; i<=g; i++)
+//  printf("\n%4d\t%3d", i, Suma(i));
+//  return 0;
+// } 
