@@ -1109,3 +1109,60 @@ int main()
 //  printf("\n%4d\t%3d", i, Suma(i));
 //  return 0;
 // } 
+
+
+// #include <stdio.h>
+
+//   long nesto (int n) {
+//       int f=1;
+//       int i;
+//       for (i=1;i<=n;i++) {
+//          f=f*i; 
+//       }
+//       return f;
+//   }
+// int main()
+
+// {
+//     int n,i,c,s=0;
+    
+//     printf ("unesite n : "); scanf ("%d" , &n);
+//     for (i=1;i<=n;i++) {
+//         s+=nesto(i);
+//     }
+//     printf ("what is this : %d" , s);
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// unsigned nzd (unsigned a, unsigned b)
+// {
+//  unsigned c;
+//  while(b != 0)
+//  {
+//  c=b;
+//  b=a%b;
+//  a=c;
+//  }
+//  return a;
+// }
+// unsigned nzs (unsigned a, unsigned b)
+// {
+//  return a*b/nzd(a,b);
+// }
+// main()
+// {
+//  unsigned a, b;
+//  while(1)
+//  {
+//  printf ("\n a= "); scanf ("%u", &a);
+//  printf (" b= "); scanf ("%u", &b);
+//  if (a==0 || b==0) break;
+//  printf (" nzd= %u", nzd(a,b));
+//  printf ("\n nzs= %u", nzs(a,b));
+//  printf ("\n\n");
+//  }
+//  getche();
+//  return 0;
+// }
