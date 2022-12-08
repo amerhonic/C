@@ -1166,3 +1166,93 @@ int main()
 //  getche();
 //  return 0;
 // }
+
+
+
+// #include <stdio.h>
+// long fakt (int n) {
+//     long i;
+//     long f=1;
+//     for (i=1;i<=n;i++) {
+//         f*=i;
+//     }
+//     return f;
+// }
+
+// int main()
+// {
+//     int n,k;
+//     int c;
+//     printf("unesite n = "); scanf ("%d" , &n);
+//     printf("unesite k = "); scanf ("%d" , &k);
+//     c=fakt(n)/(fakt(k)*fakt(n-k));
+// printf ("c = %d" , c);
+//     return 0;
+// }
+
+
+
+
+// int cifre (int a ) {
+//  int i;
+//  int s;
+//  s=0;
+//  while (a!=0) {
+//      s+=a%10;
+//      a/=10;
+//  }
+//  return s;
+    
+// }
+
+
+
+
+// int main() {
+//     // Write C code here
+//     int d,g,i,a;
+//     printf ("unesite donju granicu : "); scanf ("%d" , &d);
+//     printf ("unesite gornju granicu : "); scanf ("%d" , &g);
+//     for (i=d;i<=g;i++) {
+//         printf("\n%d\t%d" , i,cifre(i));
+//     }
+    // Online C compiler to run C program online
+#include <stdio.h>
+//svi trocifreni brojevi
+//jednaki sumi faktorijala svojih cifara
+//145 1!+4!+5!=1+24+120
+// int fakt (int a) { 
+//     int i;
+//     int broj1,broj2,broj3,s=0,suma=0,u=0,j,x,m=0,y;
+// long f=1,d=1,z=1;
+//     while (i>=100 && i<=999) {
+//         broj1=i%10;
+//         for (j=1;j<=broj1;j++) {
+//             f*=j;
+            
+//         }
+//         s+=f;
+//         broj2=(i/10)%10;
+//         for (x=1;x<=broj2;i++) {
+//           z*=x;  
+//         }
+//         u+=z;
+//         broj3=i/100;
+//         for (y=1;y<=broj3;i++) {
+//             d*=y;
+//         }
+//         m+=d;
+//         suma=s+u+m;
+//         i++;
+//     } return suma;
+// }
+// int main() {
+//     int i ,x ,a,b,c;
+    
+//     for (i=100;i<=999;i++) {
+//         if (fakt (a) == i ) {
+//             printf ("%d" , i);
+//         }
+//     }
+//     return 0;
+// }
