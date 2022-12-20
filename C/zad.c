@@ -1255,4 +1255,99 @@ int main()
 //         }
 //     }
 //     return 0;
+// }(
+
+
+// #include <stdio.h>
+// #define MAX 100
+// int main()
+// {
+//     int i, n, m, nizA[MAX], nizB[MAX], nizC[MAX];
+//  printf(" Broj elemenata niza A: ");
+//  scanf("%d", &n);
+//  printf(" Elementi niza A: ");
+//  for(i=0; i<n; i++)
+//  scanf("%d", &nizA[i]);
+//  printf(" Broj elemenata niza B: ");
+//  scanf("%d", &m);
+//  printf(" Elementi niza B: ");
+//  for(i=0; i<m; i++)
+//  scanf("%d", &nizB[i]);
+//  printf(" Elementi niza C: ");
+//  for(i=0; i<(n+m); i++)
+//  {
+//  if (i<n) nizC[i]=nizA[i];
+//  else nizC[i]=nizB[i-n];
+//  printf("%d ",nizC[i]);
+//  }
+
+//  return 0;
+
+
 // }
+
+
+// main()
+// {
+//  int i, n, nizA[MAX], nizB[MAX], nizC[MAX];
+//  printf(" Broj elemenata niza: ");
+//  scanf("%d", &n);
+//  printf(" Elementi niza A: ");
+//  for(i=0; i<n; i++)
+//  scanf("%d", &nizA[i]);
+//  printf(" Elementi niza B: ");
+//  for(i=0; i<n; i++)
+//  scanf("%d", &nizB[i]);
+//  printf(" Elementi niza C: ");
+//  for(i=0; i<n; i++)
+//  {
+//  nizC[i]=nizA[i]+nizB[i];
+//  printf("%d ",nizC[i]);
+//  }
+//  return 0;
+// }
+
+
+// #include <stdio.h>
+// #define MAX 5
+// main()
+// {
+//  float nizA[MAX], nizB[MAX], nizC[MAX];
+//  int i;
+//  printf (" Elementi niza A: ");
+//  for(i=0; i<MAX; i++)
+//  scanf ("%f", &nizA[i]);
+//  printf (" Elementi niza B: ");
+//  for(i=0; i<MAX; i++)
+//  scanf ("%f", &nizB[i]);
+//  printf ("\n Elementi niza C: ");
+//  for(i=0; i<MAX; i++)
+//  {
+//  nizC[i]=pow(nizA[i],3)/3+2*nizA[i]*nizB[i];
+//  printf ("%.2f ", nizC[i]);
+//  }
+//  return 0;
+// }
+
+
+// #include <stdio.h>
+// #define MAX 5
+// main()
+// {
+//  int nizA[MAX], nizB[MAX], nizC[MAX], i;
+//  printf (" Elementi niza A: ");
+//  for(i=0; i<MAX; i++)
+//  scanf ("%d", &nizA[i]);
+//  printf (" Elementi niza B: ");
+//  for(i=0; i<MAX; i++)
+//  scanf ("%d", &nizB[i]);
+//  printf (" Elementi niza C: ");
+//  for(i=0; i<MAX; i++)
+//  {
+//  nizC[i]=nizA[i]+nizB[MAX-1-i];
+//  printf ("%d ", nizC[i]);
+//  }
+//  return 0;
+// } 
+
+
