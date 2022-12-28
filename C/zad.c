@@ -1308,6 +1308,9 @@ int main()
 // }
 
 
+
+
+
 // #include <stdio.h>
 // #define MAX 5
 // main()
@@ -1330,6 +1333,11 @@ int main()
 // }
 
 
+///////////// 10.15
+
+
+
+
 // #include <stdio.h>
 // #define MAX 5
 // main()
@@ -1349,5 +1357,151 @@ int main()
 //  }
 //  return 0;
 // } 
+
+
+//////// 10.15
+
+
+
+// #include <stdio.h>
+// #define MAX 100
+// main()
+// {
+//  int i, n, m, k=0, nizA[MAX], nizB[MAX], nizC[MAX];
+//  printf(" Broj elemenata niza A: ");
+//  scanf("%d", &n);
+//  printf(" Elementi niza A: ");
+//  for(i=0; i<n; i++)
+//  scanf("%d", &nizA[i]);
+//  printf(" Broj elemenata niza B: ");
+//  scanf("%d", &m);
+//  printf(" Elementi niza B: ");
+//  for(i=0; i<m; i++)
+//  scanf("%d", &nizB[i]);
+//  printf("\n Elementi niza C: ");
+//  for(i=0; i<n; i++)
+//  if(nizA[i]%2==0)
+// {
+//  nizC[k]=nizA[i];
+//  k++;
+//  }
+//  for(i=0; i<m; i++)
+//  if(nizB[i]%2==0)
+//  {
+//  nizC[k]=nizB[i];
+//  k++;
+//  }
+//  for(i=0; i<k; i++)
+//  printf("%d ",nizC[i]);
+//  getche();
+//  return 0;
+// } 
+
+/////////// 10.16
+
+// #include <stdio.h>
+// #define MAX 100
+// main()
+// {
+//  int i, n, nizA[MAX], nizB[MAX], nizC[MAX];
+//  printf(" Broj elemenata niza: ");
+//  scanf("%d", &n);
+//  printf(" Elementi niza A: ");
+//  for(i=0; i<n; i++)
+//  scanf("%d", &nizA[i]);
+//  printf(" Elementi niza B: ");
+//  for(i=0; i<n; i++)
+//  scanf("%d", &nizB[i]);
+//  printf("\n Elementi niza C: ");
+//  for(i=0; i<n; i++)
+//  {
+//  if (nizA[i]<nizB[i]) nizC[i]=nizA[i];
+//  else if(nizA[i]>nizB[i]) nizC[i]=nizB[i];
+//  else nizC[i]=0;
+//  printf("%d ",nizC[i]);
+//  }
+ 
+//  return 0;
+// }
+//
+
+
+
+
+//////////////// 10.17
+
+
+// main()
+// {
+//  int nizA[MAX], nizB[MAX], nizC[MAX];
+//  int n, i, j=0 ,k=0;
+//  printf(" Broj elemenata niza A: ");
+//  scanf("%d", &n);
+//  printf(" Elemneti A: ");
+//  for(i=0; i<n; i++)
+//  scanf ("%d", &nizA[i]);
+//  for(i=0; i<n; i++)
+//  {
+//  if (nizA[i]<0)
+//  {
+//  nizB[j]=nizA[i];
+//  j++;
+//  }
+//  else
+//  {
+//  nizC[k]=nizA[i];
+//  k++;
+//  }
+//  }
+//  printf("\n Elementi B: ");
+//  for(i=0; i<j; i++)
+//  printf ("%d ", nizB[i]);
+//  printf("\n Elementi C: ");
+//  for(i=0; i<k; i++)
+//  printf ("%d ", nizC[i]);
+//  return 0;
+// } 
+
+
+int nesto (int x,int y) {
+int s=0;
+int i;
+for (i=x;i<=y;i++) {
+    if (i%2==0) {
+     s+=i*i;   
+    }
+  
+} return s;
+}
+
+
+
+
+// //само непарних за унете границе интервала. Користити функције за израчунавање збира квадрата. 
+// int nesto (int x,int y) {
+// int s=0;
+// int i;
+// for (i=x;i<=y;i++) {
+//     if (i%2==0) {
+//      s+=i*i;   
+//     }
+  
+// } return s;
+// }
+
+
+
+
+
+// int main()
+// {
+//     int d,g,z;
+//     printf("unesite donju granicu : "); scanf ("%d" ,&d);
+//     printf ("unesite gornju granicu : "); scanf ("%d" , &g);
+//     z=nesto(d,g);
+//     printf("haj ti : %d",z);
+
+//     return 0;
+// }
 
 
