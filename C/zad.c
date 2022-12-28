@@ -1616,3 +1616,92 @@ int main()
 //  printf ("osnova : %f\nstepen : %f \n rezultat : %f" , o,s,fakt(o,s));
 //     return 0;
 // }
+
+
+// #include <stdio.h>
+// #include <math.h>
+// float majka (float k,float x) {
+//     float s;
+   
+//     s=pow(1+k,x);
+//     return s;
+// }
+// int main()
+// {
+//     int p,m;
+//     float k,r;
+    
+//    printf ("unesite pare : "); scanf ("%d" , &p);
+//    printf ("unesite mesecnu kamatu :"); scanf ("%f" , &k);
+//    printf ("unesite broj meseci "); scanf("%d" , &m);
+//    r=((majka(k,m))*p*k)/(majka(k,m)-1);
+//    printf ("postovanje : %.2f" ,r );
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+// int prost (int x) {
+//     int i;
+//     int j;
+//     int brojac=0;
+//     for (j=x;j>=1;j--) {
+//         if (x%j==0) {
+//             brojac++;
+            
+//             }
+//         }
+//         if (brojac==2) return x;
+//         }
+    
+
+// int main()
+// {
+//     int z;
+//     int i;
+//     for (i=1;i<=500;i++) {
+//         z=prost(i);
+//        if (i==1) printf ("%d " , i); 
+//        if(z!=0) printf ("  %d  " ,z);
+        
+//     }
+
+
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+// int kub (int x) {
+//     int broj,a,b,c,s=0;
+//     broj=x;
+//     a=broj/100;
+//     b=(broj/10)%10;
+//     c=broj%10;
+//     s=pow(a,3)+pow(b,3)+pow(c,3);
+//     return s;
+// }
+
+// int arm (int y) {
+//     int z;
+//     z=(kub(y));
+//     if (z==y) return 1;
+//     else return 0;
+  
+// }
+// int main()
+// {
+//   int i,br,z;
+//     for (i=100;i<=999;i++) {
+//         z=arm(i);
+//         if (z==1) printf (" %d " , i);
+//         else continue;
+//     }
+    
+//     return 0;
+// }
