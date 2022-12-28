@@ -1463,16 +1463,16 @@ int main()
 // } 
 
 
-int nesto (int x,int y) {
-int s=0;
-int i;
-for (i=x;i<=y;i++) {
-    if (i%2==0) {
-     s+=i*i;   
-    }
+// int nesto (int x,int y) {
+// int s=0;
+// int i;
+// for (i=x;i<=y;i++) {
+//     if (i%2==0) {
+//      s+=i*i;   
+//     }
   
-} return s;
-}
+// } return s;
+// }
 
 
 
@@ -1505,3 +1505,114 @@ for (i=x;i<=y;i++) {
 // }
 
 
+
+// int fakt (int x) {
+//     int i;
+//     int f=1;
+//     for (i=1;i<=x;i++) {
+//         f*=i;
+//     } return f;
+// }
+
+
+
+
+// int main()
+// {
+//     int n,k,d,z,y;
+//     printf("unesite n : "); scanf("%d" ,&n);
+//     printf ("\nunesite k : "); scanf ("%d" ,&k);
+//     z=fakt(n);
+//     d=fakt(k)*(fakt(n-k));
+    
+//     printf ("treba mi %d" , z/d);
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int fakt (int x) {
+//     int i;
+//     int f=1;
+//     for (i=1;i<=x;i++) {
+//         f*=i;
+//     } return f;
+// }
+
+
+
+
+// int main()
+// {
+//     int n,k,d,z,y,s=0,i;
+//     printf("unesite n : "); scanf("%d" ,&n);    
+//     for(i=1;i<=n;i++) {
+//         z=fakt(i);
+//         s+=z;
+//     }
+//    printf ("%d" , s);
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// int fakt (int x) {
+//     int i;
+//     int f=1;
+//     for (i=1;i<=x;i++) {
+//         f*=i;
+//     } return f;
+// }
+
+
+
+
+// int main()
+// {
+ 
+//   int n,k,d,z,y,s=0,i;
+//   int a,b,c;
+//   int broj;
+
+
+
+
+
+
+
+//     for (i=100;i<=999;i++) {
+//     broj=i;
+//     c=broj%10;
+//     b=(broj/10)%10;
+//     a=broj/100;
+//     z=fakt(a)+fakt(b)+fakt(c);
+//         if (i==z) printf ("%d" , i);
+//     }
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// #include <math.h>
+// float fakt(int x , int y) {
+//     float s;
+//     s=pow(x,y);
+//  return s;
+// }
+
+
+
+
+// int main()
+// {
+//  float o,s;
+//  float z;
+//  printf ("unesite osnovu : "); scanf ("%f" , &o);
+//  printf ("unesite stepen : "); scanf ("%f" ,&s);
+ 
+//  printf ("osnova : %f\nstepen : %f \n rezultat : %f" , o,s,fakt(o,s));
+//     return 0;
+// }
