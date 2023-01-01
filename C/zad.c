@@ -2012,84 +2012,120 @@ int main()
 
 
 
- #include <stdio.h>
-#define MAX 5
-#include <math.h>
- int main()
-{
- int  i,n,m,niza[MAX], nizb[MAX],nizc[MAX];
+//  #include <stdio.h>
+// #define MAX 5
+// #include <math.h>
+//  int main()
+// {
+//  int  i,n,m,niza[MAX], nizb[MAX],nizc[MAX];
  
 
-        printf ("unesite 5 elemenata za niz a ");
-        for (i=0;i<5;i++) {
-            scanf ("%d" , &niza[i]);
-        }
+//         printf ("unesite 5 elemenata za niz a ");
+//         for (i=0;i<5;i++) {
+//             scanf ("%d" , &niza[i]);
+//         }
        
-        printf ("unesite 5 elemenata za niz b : " );
+//         printf ("unesite 5 elemenata za niz b : " );
         
-        for (i=0;i<5;i++) {
-            scanf ("%d"  , &nizb[i]);
-        }
+//         for (i=0;i<5;i++) {
+//             scanf ("%d"  , &nizb[i]);
+//         }
         
         
-        printf ("spojeni niz : ");
-       for (i=0;i<5;i++) {
-           nizc[i]= niza[i]+nizb[4-i];
-           printf (" %d " ,nizc[i]);
-       }
-       return 0;
-        }
+//         printf ("spojeni niz : ");
+//        for (i=0;i<5;i++) {
+//            nizc[i]= niza[i]+nizb[4-i];
+//            printf (" %d " ,nizc[i]);
+//        }
+//        return 0;
+//         }
 
 
 
 
 
 
-//10.15
- #include <stdio.h>
-#define MAX 5
-#include <math.h>
- int main()
-{
- int  i,n,m,niza[MAX], nizb[MAX],nizc[MAX],k=0,d=0;
+// //10.15
+//  #include <stdio.h>
+// #define MAX 5
+// #include <math.h>
+//  int main()
+// {
+//  int  i,n,m,niza[MAX], nizb[MAX],nizc[MAX],k=0,d=0;
         
-        printf ("n = "); scanf ("%d" , &n);
-        printf ("unesite %d elemenata za niz a " , n);
-        for (i=0;i<n;i++) {
-            scanf ("%d" , &niza[i]);
-        }
-        printf ("m = ") ; scanf ("%d" , &m);
-        printf ("unesite %d elemenata za niz b : ",m );
+//         printf ("n = "); scanf ("%d" , &n);
+//         printf ("unesite %d elemenata za niz a " , n);
+//         for (i=0;i<n;i++) {
+//             scanf ("%d" , &niza[i]);
+//         }
+//         printf ("m = ") ; scanf ("%d" , &m);
+//         printf ("unesite %d elemenata za niz b : ",m );
         
-        for (i=0;i<m;i++) {
-            scanf ("%d"  , &nizb[i]);
-        }
+//         for (i=0;i<m;i++) {
+//             scanf ("%d"  , &nizb[i]);
+//         }
         
         
-        printf ("spojeni niz : ");
-       for (i=0;i<n;i++) {
-          if (niza[i]%2==0) {
-              nizc[k]=niza[i];
-              k++;
+//         printf ("spojeni niz : ");
+//        for (i=0;i<n;i++) {
+//           if (niza[i]%2==0) {
+//               nizc[k]=niza[i];
+//               k++;
               
-          }
-       }
+//           }
+//        }
           
           
-           for (i=0;i<n;i++) {
-          if (nizb[i]%2==0) {
-              nizc[k]=nizb[i];
-              k++;
+//            for (i=0;i<n;i++) {
+//           if (nizb[i]%2==0) {
+//               nizc[k]=nizb[i];
+//               k++;
               
-          }
+//           }
            
-       }
-       for (i=0;i<k;i++) {
-           printf (" %d ", nizc[i])
-       }
-       return 0;
-        }
+//        }
+//        for (i=0;i<k;i++) {
+//            printf (" %d ", nizc[i])
+//        }
+//        return 0;
+//         }
   
+
+//   #include <stdio.h>
+// #define MAX 5
+// #include <math.h>
+//  int main()
+// {
+//  int  i,n,m,niza[MAX], nizb[MAX],nizc[MAX],k=0,d=0;
+        
+//         printf ("n = "); scanf ("%d" , &n);
+//         printf ("unesite %d elemenata za niz a " , n);
+//         for (i=0;i<n;i++) {
+//             scanf ("%d" , &niza[i]);
+//         }
+        
+//         printf ("unesite %d elemenata za niz b : ",n );
+        
+//           for (i=0;i<n;i++) {
+//             scanf ("%d" , &nizb[i]);
+//         }
+//         for (i=0 ;i<n;i++) {
+//             if (niza[i]<nizb[i]) {
+//                 nizc[i]=niza[i];
+//             } else if (niza[i]>nizb[i]) {
+//                 nizc[i]=nizb[i];
+//             } else nizc[i]=0;
+            
+//         }
+//         for (i=0;i<n;i++) {
+//             printf (" %d " , nizc[i]);
+//         }
+        
+//        return 0;
+//         }
+  
+
+
 
   #include <stdio.h>
 #define MAX 5
@@ -2104,23 +2140,93 @@ int main()
             scanf ("%d" , &niza[i]);
         }
         
-        printf ("unesite %d elemenata za niz b : ",n );
         
-          for (i=0;i<n;i++) {
-            scanf ("%d" , &nizb[i]);
-        }
-        for (i=0 ;i<n;i++) {
-            if (niza[i]<nizb[i]) {
-                nizc[i]=niza[i];
-            } else if (niza[i]>nizb[i]) {
-                nizc[i]=nizb[i];
-            } else nizc[i]=0;
-            
-        }
         for (i=0;i<n;i++) {
-            printf (" %d " , nizc[i]);
+           if (niza[i]<0) {
+               
+               niza[i]=nizb[k];
+               k++;
+           }
+           else {
+               niza[i]=nizc[d];
+               d++;
+           }
+        }
+        for (i=0;i<k;i++) {
+            printf (" %d " , nizb[i]);
+           
+        }
+        for (i=0;i<d;i++) {
+            printf (" %d ", nizc[i]);
         }
         
        return 0;
         }
+  
+
+
+
+
+  #include <stdio.h>
+#define MAX 5
+#include <math.h>
+ int main()
+{
+ int  i,n,m,niza[MAX], nizb[MAX],nizc[MAX],k=0,d=0,s=0;
+ float sr=0;
+        
+        printf ("n = ") ; scanf ("%d" , &n);
+        printf ("%d elemenata " , n);
+        for (i=0;i<n;i++) {
+            scanf ("%d" , &niza[i]);
+            
+        }
+        
+        for (i=0;i<n;i++) {
+            s+=niza[i];
+        }
+        sr=s/n;
+        printf ("veci od sr : ");
+        for (i=0;i<n;i++) {
+            if (niza[i] > sr)
+            {
+                nizb[k]=niza[i];
+                printf (" %d " , nizb[k]);
+                k++;
+                
+            }
+        }
+        
+       return 0;
+        }
+  
+
+
+  #include <stdio.h>
+#define MAX 50
+#include <math.h>
+ int main()
+{
+ int n,i,niz[MAX],nizb[MAX],nizc[MAX],k=0,b=0,s=0;
+    
+        
+        printf ("n = "); scanf ("%d" , &n);
+        printf ("unesi : ");
+        for (i=0;i<n;i++) {
+            
+            scanf ("%d", &niz[i]);
+            
+        }
+        printf ("eljementi : ");
+        for (i=0;i<n;i++) {
+            s+=niz[i];
+            nizb[i]=s;
+            printf (" %d " ,nizb[i]);
+        }
+        
+        
+        
+        
+       return 0;
+}
   
