@@ -1705,3 +1705,185 @@ int main()
     
 //     return 0;
 // }
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+// int suma(int x) {
+//     int a,b,c,broj,s=0;
+//     broj=x;
+//     a=broj/100;
+//     b=(broj/10)%10;
+//     c=broj%10;
+//     s=a+b+c;
+//     return s;
+    
+// }
+
+// int nivenov(int y) {
+//  int s,i,k;
+//  k=suma(y);
+//  if (y%k==0) {
+//      return 1;
+//  }
+//  else return 0;
+// }
+// int main()
+// {
+//   int i,br,z;
+// for (i=100;i<=200;i++) {
+//     z=nivenov(i);
+//     if (z==1) {
+//         printf (" %d ", i );
+//     }
+//     else continue;
+// }
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+// int dupli(int n) {
+//     int p=1;
+//     while (n>=2) {
+//         p*=n;
+//         n=n-2;
+//     } return p;
+  
+    
+// }
+
+// int main()
+// {   
+//     float e;
+//     int i=2;
+//     int znak=1;
+//     float s=1;
+//     float c=1;
+//         printf ("eps : "); scanf("%f" , &e);
+//         while (fabs(c)>=e) {
+//             c=(float)znak/dupli(i);
+//             s+=c;
+//             i++;
+//             znak=-znak;
+//         }
+//         printf ("postovanje : %.3f " ,s);
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #define MAX 100
+// int main()
+// {
+//     int n,i,niz[MAX];
+//     printf("unesite broj clanova niza : "); scanf("%d" , &n);
+//     printf ("unesite %d elemenata" ,n );
+//     for (i=0;i<n;i++) {
+//        scanf("%d",&niz[i]);
+//     }
+//     printf ("uneti elementi niza : ");
+//     for (i=0;i<n;i++) {
+//         printf("  %d  " , niz[i]);
+//     }
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #define MAX 100
+// int main()
+// {
+//    int n,i,niz[MAX];
+//    printf ("unesite n : "); scanf ("%d" , &n);
+   
+//    printf ("unesite %d elemenata" , n);
+//    for (i=0;i<n;i++) {
+//        scanf("%d" ,&niz[i]);
+       
+//    }
+//    printf ("obrnuto : ");
+//    for (i=n-1;i>=0;i--) {
+//        printf (" %d " , niz[i]);
+//    }
+//     return 0; 
+// }
+
+
+// #include <stdio.h>
+// #define MAX 100
+// #include <math.h>
+//  int main()
+// {
+//  int i, n,niz[MAX],s=0;
+//     printf ("unesite n : ");
+//     scanf ("%d" , &n);
+//     printf ("\nunesite %d elemenata : " , n);
+//     printf ("\nuneti elementi niza su : ");
+//     for (i=0;i<n;i++) {
+//         scanf ("%d" , &niz[i]);
+//     }
+//     for (i=0;i<n;i++) {
+//         s+=niz[i];
+//     }
+//     printf ("ar sredina  = %.2f" , (float)s/(float)n);
+//  return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #define MAX 100
+// #include <math.h>
+//  int main()
+// {
+//  int i, n,niz[MAX],s=0,br=0;
+//     printf ("unesite n : ");
+//     scanf ("%d" , &n);
+//     printf ("\nunesite %d elemenata : " , n);
+//     printf ("\nuneti elementi niza su : ");
+//     for (i=0;i<n;i++) {
+//         scanf ("%d" , &niz[i]);
+//     }
+//     for (i=0;i<n;i++) {
+//         if (niz[i]%3==0) {
+//         s+=niz[i];
+//         br++;
+//         }
+//     }
+//     printf ("ar sredina  = %.2f" , (float)s/(float)br);
+//  return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #define MAX 100
+// #include <math.h>
+//  int main()
+// {
+//  int i,s1=0, n,niz[MAX],s=0,br=0;
+//     printf ("unesite n : ");
+//     scanf ("%d" , &n);
+//     printf ("\nunesite %d elemenata : " , n);
+//     printf ("\nuneti elementi niza su : ");
+//     for (i=0;i<n;i++) {
+//         scanf ("%d" , &niz[i]);
+//     }
+//     for (i=0;i<n;i++) {
+//         if (niz[i]%2==0) {
+//         s+=niz[i];
+        
+//         } else s1+=niz[i];
+       
+//     }
+    
+//     printf ("\nsuma parnih  = %d" , s);
+//     printf ("\nsuma neparnih  = %d" , s1);
+//  return 0;
+// }
