@@ -1887,3 +1887,125 @@ int main()
 //     printf ("\nsuma neparnih  = %d" , s1);
 //  return 0;
 // }
+
+
+
+
+
+
+#include <stdio.h>
+#define MAX 100
+ int main()
+{
+ int i, n, niz[MAX], sumap=0, suman=0;
+ printf(" Broj elemenata: ");
+ scanf("%d", &n);
+ printf(" Elementi niza: ");
+ for(i=0; i<n; i++)
+ {
+ scanf("%d", &niz[i]);
+ if(i%2==0)
+ sumap += niz[i];
+ else
+ suman += niz[i];
+ }
+ return 0;
+}
+
+
+
+#include <stdio.h>
+#define MAX 100
+ int main()
+{
+ int i ,niza[MAX], nizb[MAX],nizc[MAX],n,m;
+ 
+        printf("duzina niza  a : "); scanf ("%d" , &n);
+        printf ("unesite %d elemenata za niz a " , n);
+        for (i=0;i<n;i++) {
+            scanf ("%d" , &niza[i]);
+        }
+        printf ("unesite m =  "); scanf ("%d" , &m );
+        printf ("unesite %d elemenata za niz b : " , m);
+        
+        for (i=0;i<m;i++) {
+            scanf ("%d"  , &nizb[i]);
+        }
+        
+        
+        printf ("spojeni niz : ");
+        for (i=0;i<m+n;i++) {
+        if (i<n) nizc[i]=niza[i];
+        else nizc[i]=nizb[i-n];
+        printf (" %d ",nizc[i]);
+        }
+ return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+#define MAX 100
+ int main()
+{
+ int i ,niza[MAX], nizb[MAX],nizc[MAX],n,m;
+ 
+        printf("duzina niza  a : "); scanf ("%d" , &n);
+        printf ("unesite %d elemenata za niz a " , n);
+        for (i=0;i<n;i++) {
+            scanf ("%d" , &niza[i]);
+        }
+       
+        printf ("unesite %d elemenata za niz b : " , n);
+        
+        for (i=0;i<n;i++) {
+            scanf ("%d"  , &nizb[i]);
+        }
+        
+        
+        printf ("spojeni niz : ");
+       for (i=0;i<n;i++) {
+           nizc[i]= niza[i]+nizb[i];
+           printf (" %d " ,nizc[i]);
+       }
+       return 0;
+        }
+
+
+
+
+
+
+
+
+
+
+        #include <stdio.h>
+#define MAX 100
+#include <math.h>
+ int main()
+{
+ int  i,n,m;
+ 
+      float niza[MAX], nizb[MAX],nizc[MAX];
+        printf ("unesite 5 elemenata za niz a ");
+        for (i=0;i<5;i++) {
+            scanf ("%f" , &niza[i]);
+        }
+       
+        printf ("unesite 5 elemenata za niz b : " );
+        
+        for (i=0;i<5;i++) {
+            scanf ("%f"  , &nizb[i]);
+        }
+        
+        
+        printf ("spojeni niz : ");
+       for (i=0;i<5;i++) {
+           nizc[i]= (pow (niza[i],3))/3+(2*niza[i]*nizb[i]);
+           printf (" %.2f " ,nizc[i]);
+       }
+       return 0;
+        }
