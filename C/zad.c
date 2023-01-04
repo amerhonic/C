@@ -2430,3 +2430,104 @@ int main()
 
 //     return 0;
 // }
+
+
+// int main()
+// {  int i,j,mat[i][j],m,kupus=0,br=0;
+// char a;
+
+// printf("unesi m");
+// scanf("%d",&m);
+
+// for(i=0;i<m;i++)
+//  for(j=0;j<m;j++){
+//      scanf("%d",&mat[i][j]);
+//  }
+ 
+//  for(i=0;i<m;i++){
+//  for(j=0;j<m;j++){
+//      printf("%d ",mat[i][j]);
+//  }
+//  printf("\n");
+// }
+// while(a!='k'){
+//     printf ("\n Enter the character \n");
+// scanf("%c",&a);
+// for(i=0;i<m;i++)
+// for(j=0;j<m;j++){
+//     if(a=='l'){
+//         j--;
+//         br++;
+//     }
+//     if(a=='d'){
+//         j++;
+//         br++;
+//     }
+//     if(a=='g'){
+//         i++;
+//         br++;
+//     }
+//     if(a=='n'){
+//         i--;
+//         br++;
+//     }
+//     if(mat[i][j]==1){
+//         kupus++;
+//     }
+    
+// }
+// }
+// printf("\n%d  %d",kupus,br);
+// return 0;
+
+
+// int i,niz[100],n,budzet,pom,j,suma=0;
+// printf("unesi n i budzet");
+// scanf("%d  %d",&n,&budzet);
+// for(i=0;i<n;i++){
+//     scanf("%d",&niz[i]);
+// }
+// for(i=0;i<n-1;i++){
+//  for(j=i+1;j<n;j++){
+//      if(niz[i]>niz[i+1]){
+//          pom=niz[i];
+//          niz[i]=niz[i+1];
+//          niz[i+1]=pom;
+//      }
+//  }
+// }
+
+
+//     for(i=0;i<n;i++){
+//         suma+=niz[i];
+//         if(suma>budzet)break;
+//     }
+//     printf("%d",i);
+
+
+//     int main()
+// { int i,mat[100][100],n,budzet,pom,j,suma=0,makica[100][100];
+// printf("unesi n");
+// scanf("%d",&n);
+// for(i=0;i<n;i++)
+// for(j=0;j<n;j++){
+//     scanf("%d",&mat[i][j]);
+// }
+// for(i=0;i<n;i++){
+//  for(j=0;j<n;j++){
+//    if(mat[i][j]%2==0&&i+j==3){
+//        makica[i][j]=mat[i][j];}
+//        else makica[i][j]=0;
+   
+//  }
+// }
+
+
+//     for(i=0;i<n;i++){
+//         for(j=0;j<n;j++){
+//             printf("%d ",makica[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+// return 0;
