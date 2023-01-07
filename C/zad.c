@@ -2489,7 +2489,7 @@ int main()
 // }
 // for(i=0;i<n-1;i++){
 //  for(j=i+1;j<n;j++){
-//      if(niz[i]>niz[i+1]){
+//      if(niz[i]>niz[j]){
 //          pom=niz[i];
 //          niz[i]=niz[i+1];
 //          niz[i+1]=pom;
@@ -2531,3 +2531,37 @@ int main()
 //     }
     
 // return 0;
+
+
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+
+{
+    int i,j,br=0,n,x;
+    char s[100],b[100];
+    printf ("unesite prvu rec");
+    gets(s);
+    printf ("unesite drugu rec");
+    gets(b);
+    n=strlen(s);
+    x=strlen(b);
+    for (i=0;i<n;i++){
+    for (j=0;j<x;j++){
+        
+        if (s[i]==b[j]) {
+            br++;
+            break;
+        }
+            
+    }
+   
+    }
+    if (n==br) printf ("postovanje ");
+    else printf ("bez postovanja");
+    printf ("%d" ,br);
+    
+ return 0;
+}
