@@ -2565,3 +2565,39 @@ int main()
     
  return 0;
 }
+
+
+#include <stdio.h>
+#include <string.h>
+
+int racunanje(int niz1[],niz2[],int n) {
+    
+    int i,j,s=0,br=0;
+    for(i=0;i<n;i++)
+    for(j=0;j<n;j++) {
+        if(niz1[i]==niz2[j]) {
+            
+            niz3[br]=niz[i]; br++;
+        }
+        
+    } return niz3[br];
+}
+
+int main()
+
+{
+    int i,j,br=0,n,x,niz[100];
+    int n;
+    printf ("unesite n : "); scanf("%d" , &n);
+    printf ("prvi niz : ");
+    for (i=0;i<n;i++) {
+        scanf ("%d",niz[i]);
+    }
+    printf ("drugi niz : ");
+    for (i=0;i<n;i++) {
+        scanf ("%d" , &niz2[i]);
+    }
+
+    
+ return 0;
+}
