@@ -2535,69 +2535,128 @@ int main()
 
 
 
-#include <stdio.h>
-#include <string.h>
-int main()
+// #include <stdio.h>
+// #include <string.h>
+// int main()
 
-{
-    int i,j,br=0,n,x;
-    char s[100],b[100];
-    printf ("unesite prvu rec");
-    gets(s);
-    printf ("unesite drugu rec");
-    gets(b);
-    n=strlen(s);
-    x=strlen(b);
-    for (i=0;i<n;i++){
-    for (j=0;j<x;j++){
+// {
+//     int i,j,br=0,n,x;
+//     char s[100],b[100];
+//     printf ("unesite prvu rec");
+//     gets(s);
+//     printf ("unesite drugu rec");
+//     gets(b);
+//     n=strlen(s);
+//     x=strlen(b);
+//     for (i=0;i<n;i++){
+//     for (j=0;j<x;j++){
         
-        if (s[i]==b[j]) {
-            br++;
-            break;
-        }
+//         if (s[i]==b[j]) {
+//             br++;
+//             break;
+//         }
             
-    }
+//     }
    
-    }
-    if (n==br) printf ("postovanje ");
-    else printf ("bez postovanja");
-    printf ("%d" ,br);
+//     }
+//     if (n==br) printf ("postovanje ");
+//     else printf ("bez postovanja");
+//     printf ("%d" ,br);
     
- return 0;
-}
+//  return 0;
+// }
 
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int racunanje(int niz1[],niz2[],int n) {
+// int racunanje(int niz1[],niz2[],int n) {
     
-    int i,j,s=0,br=0;
-    for(i=0;i<n;i++)
-    for(j=0;j<n;j++) {
-        if(niz1[i]==niz2[j]) {
+//     int i,j,s=0,br=0;
+//     for(i=0;i<n;i++)
+//     for(j=0;j<n;j++) {
+//         if(niz1[i]==niz2[j]) {
             
-            niz3[br]=niz[i]; br++;
+//             niz3[br]=niz[i]; br++;
+//         }
+        
+//     } return niz3[br];
+// }
+
+// int main()
+
+// {
+//     int i,j,br=0,n,x,niz[100];
+//     int n;
+//     printf ("unesite n : "); scanf("%d" , &n);
+//     printf ("prvi niz : ");
+//     for (i=0;i<n;i++) {
+//         scanf ("%d",niz[i]);
+//     }
+//     printf ("drugi niz : ");
+//     for (i=0;i<n;i++) {
+//         scanf ("%d" , &niz2[i]);
+//     }
+
+    
+//  return 0;
+// }
+
+
+int **a,br=0,s=0,i,j,n,m,max=0,imax=0,smax=0;
+    printf ("bez zajebancije n : "); scanf ("%d" , &n);
+    printf ("bez zajebancije m : "); scanf ("%d" , &m);
+    a=(int **)malloc(m*sizeof(int*));
+    if (a==NULL) {
+        printf ("nema se");
+        exit(1);
+    }
+    for (i=0;i<m;i++) {
+        a[i]=(int *)malloc(n*sizeof(int*));
+        
+        if (a==NULL) {
+           for (j=0;j<i;i++) {
+               free(a[j]);
+               free(a);
+               exit(1);
+           }
+        
+            
         }
         
-    } return niz3[br];
-}
-
-int main()
-
-{
-    int i,j,br=0,n,x,niz[100];
-    int n;
-    printf ("unesite n : "); scanf("%d" , &n);
-    printf ("prvi niz : ");
-    for (i=0;i<n;i++) {
-        scanf ("%d",niz[i]);
     }
-    printf ("drugi niz : ");
-    for (i=0;i<n;i++) {
-        scanf ("%d" , &niz2[i]);
-    }
-
     
- return 0;
-}
+    printf ("unesi matricu : ");
+    for (i=0;i<m;i++){
+    for(j=0;j<n;j++) {
+     scanf ("%d" ,&a[i][j] );  
+    }
+    }
+    
+    for (i=0;i<m;i++){
+    for (j=0;j<n;j++) {
+        
+        if (a[i][j]>0) br++;
+        s+=a[i][j];
+        if(br>max){
+            max=br;
+            imax=i;
+            
+            smax=s;
+            
+        }
+        if(max==br){
+            if(s>smax){
+                smax=s;
+                imax=i;
+            }
+        }
+        
+    }    
+    s=0;
+    br=0;
+    
+    }
+printf("%d",imax+1);
+    
+    return 0;
