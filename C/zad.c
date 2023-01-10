@@ -2657,6 +2657,6 @@ int **a,br=0,s=0,i,j,n,m,max=0,imax=0,smax=0;
     br=0;
     
     }
-printf("%d",imax+1);
+printf("broj sa najvecim brojem pozitivnih ili najvecu sumu u slucaju istog broja pozitivnih je : %d",imax+1);
     
     return 0;
