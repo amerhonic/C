@@ -2603,60 +2603,139 @@ int main()
 // }
 
 
-int **a,br=0,s=0,i,j,n,m,max=0,imax=0,smax=0;
-    printf ("bez zajebancije n : "); scanf ("%d" , &n);
-    printf ("bez zajebancije m : "); scanf ("%d" , &m);
-    a=(int **)malloc(m*sizeof(int*));
-    if (a==NULL) {
-        printf ("nema se");
-        exit(1);
-    }
-    for (i=0;i<m;i++) {
-        a[i]=(int *)malloc(n*sizeof(int*));
+// int **a,br=0,s=0,i,j,n,m,max=0,imax=0,smax=0;
+//     printf ("bez zajebancije n : "); scanf ("%d" , &n);
+//     printf ("bez zajebancije m : "); scanf ("%d" , &m);
+//     a=(int **)malloc(m*sizeof(int*));
+//     if (a==NULL) {
+//         printf ("nema se");
+//         exit(1);
+//     }
+//     for (i=0;i<m;i++) {
+//         a[i]=(int *)malloc(n*sizeof(int*));
         
-        if (a==NULL) {
-           for (j=0;j<i;i++) {
-               free(a[j]);
-               free(a);
-               exit(1);
-           }
+//         if (a==NULL) {
+//            for (j=0;j<i;i++) {
+//                free(a[j]);
+//                free(a);
+//                exit(1);
+//            }
         
             
-        }
+//         }
         
-    }
+//     }
     
-    printf ("unesi matricu : ");
-    for (i=0;i<m;i++){
-    for(j=0;j<n;j++) {
-     scanf ("%d" ,&a[i][j] );  
-    }
-    }
+//     printf ("unesi matricu : ");
+//     for (i=0;i<m;i++){
+//     for(j=0;j<n;j++) {
+//      scanf ("%d" ,&a[i][j] );  
+//     }
+//     }
     
-    for (i=0;i<m;i++){
-    for (j=0;j<n;j++) {
+//     for (i=0;i<m;i++){
+//     for (j=0;j<n;j++) {
         
-        if (a[i][j]>0) br++;
-        s+=a[i][j];
-        if(br>max){
-            max=br;
-            imax=i;
+//         if (a[i][j]>0) br++;
+//         s+=a[i][j];
+//         if(br>max){
+//             max=br;
+//             imax=i;
             
-            smax=s;
+//             smax=s;
             
-        }
-        if(max==br){
-            if(s>smax){
-                smax=s;
-                imax=i;
-            }
-        }
+//         }
+//         if(max==br){
+//             if(s>smax){
+//                 smax=s;
+//                 imax=i;
+//             }
+//         }
         
-    }    
-    s=0;
-    br=0;
+//     }    
+//     s=0;
+//     br=0;
     
+//     }
+// printf("broj sa najvecim brojem pozitivnih ili najvecu sumu u slucaju istog broja pozitivnih je : %d",imax+1);
+    
+//     return 0;
+
+
+
+#include <stdio.h>
+#define MAX 100
+#define MAXR 100
+struct zaposleni {
+    char ime [MAX];
+    char prezime [MAX];
+    char mesto [MAX];
+    int plata;
+} zaposleni;
+int main()
+{
+    struct zaposleni radnik[MAX];
+    int n,i;
+printf ("unesite broj zaposlenih : ");
+scanf ("%d" , &n);
+for (i=1;i<=n;i++) {
+    printf("unesite podatke od %d zaposlenog",  i);
+    printf ("\nunesite ime :");
+   scanf ("%s" , &radnik[i].ime);
+   printf ("unesite prezime :");
+   scanf ("%s",&radnik[i].prezime);
+   printf ("unesite radno mesto : ");
+   scanf ("%s" , &radnik[i].mesto);
+   printf ("unesite platu");
+   scanf ("%d" , &radnik[i].plata);
+}
+for (i=1;i<=n;i++) {
+    printf ("\npodatci od %d zaposlenog" , i);
+    printf ("\nime zaposlenog : ");
+    printf ("%s" , radnik[i].ime);
+    printf ("\nprezime zaposlenog : ");
+    printf ("%s" , radnik[i].prezime);
+    printf ("\nradno mesto zaposlenog : ");
+    printf ("%s" , radnik[i].mesto);
+    printf ("\nplata zaposlenog : ");
+    printf ("%d" , radnik[i].plata);
+}
+ return 0;
+}
+
+
+
+
+#include <stdio.h>
+#define MAX 100
+#define MAXR 100
+struct studenti {
+    char imepre [MAX];
+    int indeks [MAX];
+    int preneti; 
+    float prosek; 
+} zaposleni;
+int main()
+{
+    struct studenti haha[MAX];
+    int n,i,s=0;
+    printf ("unesite broj studenata : ");
+    scanf ("%d" ,&n);
+    for (i=1;i<=n;i++) {
+        printf ("unesite podatke za %d studenta ",i);
+        printf ("Ime i prezime : ");
+        scanf ("%s" , &haha[i].imepre);
+        printf ("unesite broj indeksa : ");
+        scanf ("%d" , haha[i].indeks);
+        printf ("unesite broj prenetih isppita  :");
+        scanf ("%d" , &haha[i].preneti);
+        printf ("unesite prosek studenta : ");
+        scanf ("%.2f" , haha[i].prosek);
+        s+=haha[i].prosek/n;
+        
     }
-printf("broj sa najvecim brojem pozitivnih ili najvecu sumu u slucaju istog broja pozitivnih je : %d",imax+1);
-    
-    return 0;
+    for (i=1;i<=n;i++) {
+        if (haha[i].prosek>s) {
+            printf ("%s %d %f" , haha[i].imepre,haha[i].indeks,haha[i].prosek);
+        }
+    }
