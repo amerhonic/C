@@ -2739,3 +2739,28 @@ int main()
             printf ("%s %d %f" , haha[i].imepre,haha[i].indeks,haha[i].prosek);
         }
     }
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#define MAX 100
+main()
+{
+ char a[MAX+1], b;
+ int n, i, br=0;
+ printf("\n Unesite string: ");
+ gets(a);
+ n=strlen(a);
+ printf("\n Upisite znak koje trazite: ");
+ scanf("%c",&b);
+ for(i=0; i<n; i++)
+ if(a[i]==b || a[i]==toupper(b))
+ br++;
+ if(br!=0)
+ printf("\n Znak %c se pojavljuje %d puta", b, br);
+ else printf("\n Znaka %c nema u stringu", b);
+ getche();
+ return 0;
+}
