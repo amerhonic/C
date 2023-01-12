@@ -2663,104 +2663,180 @@ int main()
 
 
 
-#include <stdio.h>
-#define MAX 100
-#define MAXR 100
-struct zaposleni {
-    char ime [MAX];
-    char prezime [MAX];
-    char mesto [MAX];
-    int plata;
-} zaposleni;
-int main()
-{
-    struct zaposleni radnik[MAX];
-    int n,i;
-printf ("unesite broj zaposlenih : ");
-scanf ("%d" , &n);
-for (i=1;i<=n;i++) {
-    printf("unesite podatke od %d zaposlenog",  i);
-    printf ("\nunesite ime :");
-   scanf ("%s" , &radnik[i].ime);
-   printf ("unesite prezime :");
-   scanf ("%s",&radnik[i].prezime);
-   printf ("unesite radno mesto : ");
-   scanf ("%s" , &radnik[i].mesto);
-   printf ("unesite platu");
-   scanf ("%d" , &radnik[i].plata);
-}
-for (i=1;i<=n;i++) {
-    printf ("\npodatci od %d zaposlenog" , i);
-    printf ("\nime zaposlenog : ");
-    printf ("%s" , radnik[i].ime);
-    printf ("\nprezime zaposlenog : ");
-    printf ("%s" , radnik[i].prezime);
-    printf ("\nradno mesto zaposlenog : ");
-    printf ("%s" , radnik[i].mesto);
-    printf ("\nplata zaposlenog : ");
-    printf ("%d" , radnik[i].plata);
-}
- return 0;
-}
+// #include <stdio.h>
+// #define MAX 100
+// #define MAXR 100
+// struct zaposleni {
+//     char ime [MAX];
+//     char prezime [MAX];
+//     char mesto [MAX];
+//     int plata;
+// } zaposleni;
+// int main()
+// {
+//     struct zaposleni radnik[MAX];
+//     int n,i;
+// printf ("unesite broj zaposlenih : ");
+// scanf ("%d" , &n);
+// for (i=1;i<=n;i++) {
+//     printf("unesite podatke od %d zaposlenog",  i);
+//     printf ("\nunesite ime :");
+//    scanf ("%s" , &radnik[i].ime);
+//    printf ("unesite prezime :");
+//    scanf ("%s",&radnik[i].prezime);
+//    printf ("unesite radno mesto : ");
+//    scanf ("%s" , &radnik[i].mesto);
+//    printf ("unesite platu");
+//    scanf ("%d" , &radnik[i].plata);
+// }
+// for (i=1;i<=n;i++) {
+//     printf ("\npodatci od %d zaposlenog" , i);
+//     printf ("\nime zaposlenog : ");
+//     printf ("%s" , radnik[i].ime);
+//     printf ("\nprezime zaposlenog : ");
+//     printf ("%s" , radnik[i].prezime);
+//     printf ("\nradno mesto zaposlenog : ");
+//     printf ("%s" , radnik[i].mesto);
+//     printf ("\nplata zaposlenog : ");
+//     printf ("%d" , radnik[i].plata);
+// }
+//  return 0;
+// }
 
 
 
 
-#include <stdio.h>
-#define MAX 100
-#define MAXR 100
-struct studenti {
-    char imepre [MAX];
-    int indeks [MAX];
-    int preneti; 
-    float prosek; 
-} zaposleni;
-int main()
-{
-    struct studenti haha[MAX];
-    int n,i,s=0;
-    printf ("unesite broj studenata : ");
-    scanf ("%d" ,&n);
-    for (i=1;i<=n;i++) {
-        printf ("unesite podatke za %d studenta ",i);
-        printf ("Ime i prezime : ");
-        scanf ("%s" , &haha[i].imepre);
-        printf ("unesite broj indeksa : ");
-        scanf ("%d" , haha[i].indeks);
-        printf ("unesite broj prenetih isppita  :");
-        scanf ("%d" , &haha[i].preneti);
-        printf ("unesite prosek studenta : ");
-        scanf ("%.2f" , haha[i].prosek);
-        s+=haha[i].prosek/n;
+// #include <stdio.h>
+// #define MAX 100
+// #define MAXR 100
+// struct studenti {
+//     char imepre [MAX];
+//     int indeks [MAX];
+//     int preneti; 
+//     float prosek; 
+// } zaposleni;
+// int main()
+// {
+//     struct studenti haha[MAX];
+//     int n,i,s=0;
+//     printf ("unesite broj studenata : ");
+//     scanf ("%d" ,&n);
+//     for (i=1;i<=n;i++) {
+//         printf ("unesite podatke za %d studenta ",i);
+//         printf ("Ime i prezime : ");
+//         scanf ("%s" , &haha[i].imepre);
+//         printf ("unesite broj indeksa : ");
+//         scanf ("%d" , haha[i].indeks);
+//         printf ("unesite broj prenetih isppita  :");
+//         scanf ("%d" , &haha[i].preneti);
+//         printf ("unesite prosek studenta : ");
+//         scanf ("%.2f" , haha[i].prosek);
+//         s+=haha[i].prosek/n;
         
-    }
-    for (i=1;i<=n;i++) {
-        if (haha[i].prosek>s) {
-            printf ("%s %d %f" , haha[i].imepre,haha[i].indeks,haha[i].prosek);
-        }
-    }
+//     }
+//     for (i=1;i<=n;i++) {
+//         if (haha[i].prosek>s) {
+//             printf ("%s %d %f" , haha[i].imepre,haha[i].indeks,haha[i].prosek);
+//         }
+//     }
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <ctype.h>
+// #define MAX 100
+// main()
+// {
+//  char a[MAX+1], b;
+//  int n, i, br=0;
+//  printf("\n Unesite string: ");
+//  gets(a);
+//  n=strlen(a);
+//  printf("\n Upisite znak koje trazite: ");
+//  scanf("%c",&b);
+//  for(i=0; i<n; i++)
+//  if(a[i]==b || a[i]==toupper(b))
+//  br++;
+//  if(br!=0)
+//  printf("\n Znak %c se pojavljuje %d puta", b, br);
+//  else printf("\n Znaka %c nema u stringu", b);
+//  getche();
+//  return 0;
+// }
 
 
 
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-#define MAX 100
+typedef struct temperature
+{
+ int datum;
+ int m7;
+ int m13;
+ int m19;
+} TEMPERATURE;
 main()
 {
- char a[MAX+1], b;
- int n, i, br=0;
- printf("\n Unesite string: ");
- gets(a);
- n=strlen(a);
- printf("\n Upisite znak koje trazite: ");
- scanf("%c",&b);
- for(i=0; i<n; i++)
- if(a[i]==b || a[i]==toupper(b))
- br++;
- if(br!=0)
- printf("\n Znak %c se pojavljuje %d puta", b, br);
- else printf("\n Znaka %c nema u stringu", b);
- getche();
+ TEMPERATURE temp[10];
+ int i, j, uk7=0, uk13=0, uk19=0, pomd;
+ float pr7, pr13, pr19, prdnevna[10], pom;
+ FILE *ulaz, *izlaz;
+ char ime1[20], ime2[20];
+ printf("\n Ime datoteke sa podacima: ");
+ scanf("%s",&ime1);
+ printf(" Ime datoteke za kreiranje: ");
+ scanf("%s",&ime2);
+ if((ulaz=fopen(ime1, "r"))== NULL)
+ {
+ printf("Greska prilikom otvaranja datoteke!\n");
+ return 1;
+ }
+ if((izlaz=fopen(ime2, "w"))== NULL)
+ {
+ printf("Greska prilikom otvaranja datoteke!\n");
+ return 1;
+ }
+ /*Citanje podataka iz datoteke*/
+ /*Racunanje ukupnih temperatura u 7h, 13h i 19h i dnevne prosecne temperature*/
+ for(i=0; i<10; i++)
+ {
+ fscanf(ulaz, "%d%d%d%d", &temp[i].datum, &temp[i].m7,
+ &temp[i].m13, &temp[i].m19);
+ uk7+=temp[i].m7;
+ uk13+=temp[i].m13;
+ uk19+=temp[i].m19;
+ prdnevna[i]=(float)(temp[i].m7 + temp[i].m13 + temp[i].m19)/3;
+ }
+ /*Racunjane prosecnih temperatura u 7h, 13h i 19h*/
+ pr7=(float)uk7/10;
+ pr13=(float)uk13/10;
+ pr19=(float)uk19/10;
+ /*Sortiranje prosecnih temperatura od najvise ka najnize*/
+ for(i=0; i<9; i++)
+ for(j=i+1; j<10; j++)
+ if(prdnevna[i] < prdnevna[j])
+ {
+ pom=prdnevna[i];
+ pomd=temp[i].datum;
+ prdnevna[i]=prdnevna[j];
+ temp[i].datum=temp[j].datum;
+ prdnevna[j]=pom;
+ temp[j].datum=pomd;
+ }
+ /*Upis podataka u novokreiranu datoteku*/
+ for(i=0; i<10; i++)
+ fprintf(izlaz, " %02d %.2f\n", temp[i].datum, prdnevna[i]);
+ fclose(ulaz);
+ fclose(izlaz);
+ printf("\n Datoteka je kreirana!\n\n");
+ /*Ispis podataka na ekran*/
+ printf(" Najtopliji dan %02d.avgust sa temperaturom od %.2f stepeni.\n",
+ temp[0].datum, prdnevna[0]);
+ printf(" Najhladniji dan %02d.avgust sa temperaturom od %.2f stepeni.\n",
+ temp[9].datum, prdnevna[9]);
+ printf(" Prosecna temperatura u 07h: %.2f\n", pr7);
+ printf(" Prosecna temperatura u 13h: %.2f\n", pr13);
+ printf(" Prosecna temperatura u 19h: %.2f\n", pr19);
+
  return 0;
 }
