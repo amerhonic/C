@@ -2913,3 +2913,208 @@ int i,niz[100],n,budzet,pom,j,suma=0;
    
 //  }
 // }
+
+
+
+
+
+
+
+
+// int main()
+// { int i,j,niz1[100],niz2[100],niz3[100],n,br=0;
+// printf("unesi n");
+// scanf("%d",&n);
+// for(i=0;i<n;i++){
+//         scanf("%d",&niz1[i]);
+//     }
+// for(i=0;i<n;i++){
+//         scanf("%d",&niz2[i]);
+//     }
+//     preslikavanje(niz1,niz2,n);
+   
+// return 0;
+// }
+
+
+
+
+// int **a,br=0,s=0,i,j,n,m,max=0,imax=0,smax=0;
+//     printf ("bez zajebancije n : "); scanf ("%d" , &n);
+//     printf ("bez zajebancije m : "); scanf ("%d" , &m);
+//     a=(int **)malloc(m*sizeof(int*));
+//     if (a==NULL) {
+//         printf ("nema se");
+//         exit(1);
+//     }
+//     for (i=0;i<m;i++) {
+//         a[i]=(int *)malloc(n*sizeof(int*));
+        
+//         if (a==NULL) {
+//            for (j=0;j<i;i++) {
+//                free(a[j]);
+//                free(a);
+//                exit(1);
+//            }
+        
+            
+//         }
+        
+//     }
+    
+//     printf ("unesi matricu : ");
+//     for (i=0;i<m;i++){
+//     for(j=0;j<n;j++) {
+//      scanf ("%d" ,&a[i][j] );  
+//     }
+//     }
+    
+//     for (i=0;i<m;i++){
+//     for (j=0;j<n;j++) {
+        
+//         if (a[i][j]>0) br++;
+//         s+=a[i][j];
+//         if(br>max){
+//             max=br;
+//             imax=i;
+            
+//             smax=s;
+            
+//         }
+//         if(max==br){
+//             if(s>smax){
+//                 smax=s;
+//                 imax=i;
+//             }
+//         }
+        
+//     }  
+
+
+
+// int n, i,j=0,k=0;
+//  char s[100+1];
+//  printf("\n Unesite string: ");
+//  gets(s);
+//  n=strlen(s);
+//  printf("\n Novi string: ");
+//  for(i=0; i<n; i++){
+//      if(s[i]=='/'&&s[i+1]=='*'){
+//          j=i;
+//      }
+//  }
+//  for(i=0; i<n; i++){
+//      if(s[i]=='/'&&s[i-1]=='*'){
+//          k=i;
+//      }
+//  }
+ 
+//  for(i=0;i<n;i++){
+//      if(i<j||i>k)printf("%c", s[i]);
+//  }
+ 
+ 
+//  return 0;
+
+
+
+
+// // #include <stdio.h>
+
+// // struct zaposleni{
+//     char ime[100];
+//     char prezime[100];
+//     char radno[100];
+//     float plata;
+// };
+
+
+
+// int main()
+// {int n,i;
+//     struct zaposleni radnik[100];
+    
+// printf("unesi n:");
+// scanf("%d",&n);
+// for(i=0;i<n;i++){
+//  printf("\n Unesite podatke o zaposlenom %d\n",i+1);
+//  printf(" Unesite ime: ");
+// scanf("%s",&radnik[i].ime);
+//  printf(" Unesite prezime: ");
+//  scanf("%s",&radnik[i].prezime);
+//  printf(" Unesite radno mesto: ");
+//  scanf("%s",&radnik[i].radno);
+//  printf(" Unesite platu: ");
+//  scanf("%f",&radnik[i].plata);
+// }
+// for(i=0;i<n;i++){
+//     printf("\npodaci o zaposlenom %d",i+1);
+//     printf("\nime:%s",radnik[i].ime);
+//     printf("\nprezime:%s",radnik[i].prezime);
+//     printf("\nradno:%s",radnik[i].radno);
+//     printf("\nplata:%f",radnik[i].plata);
+// }
+// return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// struct fakultet{
+//     char ime[100];
+//     char prezime[100];
+//     int indeks;
+//     int brpr;
+//     float prosek;
+// };
+
+
+// #include <stdio.h>
+// typedef struct ucenici{
+//     char ime[30];
+//     char prezime[30];
+//     char adresa[30];
+//     int razred;
+//     int odeljenje;
+// }UCENICI;
+
+// int main()
+// {   UCENICI ucenik[100];
+    
+//     FILE *dato;
+//     if((dato=fopen("ucenici.txt","w"))==NULL){
+//         printf("greska");
+//         return 1;
+//     }
+//     printf("unesi n");
+//     scanf("%d",&n);
+//     for(i=0;i<n;i++){
+//         printf("unesi ime:")
+//         scanf("%s",ucenik[i].ime);
+//         printf("unesi prezime:")
+//         scanf("%s",ucenik[i].prezime);
+//         printf("unesi adresa:")
+//         scanf("%s",ucenik[i].adresa);
+//         printf("unesi razred:")
+//         scanf("%d",ucenik[i].razred);
+//         printf("unesi odeljenje:")
+//         scanf("%d",ucenik[i].odeljenje);
+//         fprintf(dato,"%s %s %s %d %d",ucenik[i].ime,ucenik[i].prezime,ucenik[i].adresa,ucenik[i].razred,ucenik[i].odeljenje)
+//     }
+//     fclose(dato);
+//         printf("unesi x");
+//     scanf("%d",&x);
+//     if((dato=fopen("ucenici.txt","r"))==NULL){
+//         printf("greska");
+//         return 1;
+//     }
+//     for(i=0;i<n;i++){
+//         fscanf(dato,"%s%s%s%d%d",&ucenik[i].ime,&ucenik[i].prezime,&ucenik[i].adresa,&ucenik[i].razred,&ucenik[i].odeljenje)
+//         if(ucenik[i].razred==x){
+//             printf("%s%s%s%d%d",ucenik[i].ime,ucenik[i].prezime,ucenik[i].adresa,ucenik[i].razred,ucenik[i].odeljenje)
+//         }
+//     }
+//     fclose(dato);
+//     return 0;
+    //dal se pada
