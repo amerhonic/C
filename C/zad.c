@@ -3117,4 +3117,45 @@ int i,niz[100],n,budzet,pom,j,suma=0;
 //     }
 //     fclose(dato);
 //     return 0;
-    //dal se pada
+    
+
+
+
+
+
+
+
+    // int niz[100],n,i,max;
+//     printf("unesi n:");
+//     scanf("%d",&n);
+//     for(i=0;i<n;i++){
+//         scanf("%d",&niz[i]);
+//     }
+//     max=niz[0];
+//     for(i=1;i<n;i++){
+//         if(niz[i]>max)max=niz[i];
+//     }
+//     printf("%d",max);
+    
+
+//     return 0;
+
+
+// int niz[100],n,i,max,min;
+//     printf("unesi n:");
+//     scanf("%d",&n);
+//     for(i=0;i<n;i++){
+//         scanf("%d",&niz[i]);
+//     }
+//     max=niz[0];
+//     min=niz[0];
+//     for(i=1;i<n;i++){
+//         if(niz[i]>max)max=niz[i];
+//         if(niz[i]<min)min=niz[i];
+//     }
+//     for(i=0;i<n;i++){
+//         if((niz[i]>min*2)&&(niz[i]<(max/2)))printf("%d ",niz[i]);
+//     }
+    
+
+//     return 0;
